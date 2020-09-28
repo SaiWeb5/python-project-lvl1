@@ -7,12 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Linter test
-      run: git clone https://github.com/SaiWeb5/python-project-lvl1.git
     - name: Pip install
-      run: |
-        pip install poetry
-        make install      
+      run: pip install poetry
+    - name: Testing pip    
+      run: make install      
       
                
 
