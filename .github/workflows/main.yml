@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Testing linter
-        run: make lint  
+      - name: Install poetry
+        run: | 
+          pip install poetry
+          make install
+      - name: Run flake8 
+        run: make lint
+               
 
       
       
