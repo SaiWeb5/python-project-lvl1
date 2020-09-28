@@ -22,5 +22,7 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }} 
       - name: Install poetry
         run: make install    
+      - name: Flake8
+        run: python -m pip install flake8       
       - name: Run linter test
         run: make lint  
