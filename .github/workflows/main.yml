@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Python Poetry Action
         uses: abatilo/actions-poetry@v1.0.0
+      - name: Test
+        run: make lint
         env: 
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
