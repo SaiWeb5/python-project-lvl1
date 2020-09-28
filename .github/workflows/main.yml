@@ -21,11 +21,12 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Poetry version 
-        run: poetry --version
+        run: | 
+          poetry --version
+          pip --version
+          python --version
       - name: Files
         run: ls -la  
-      - name: Nano
-        run: nano Makefile
       - name: Run make poetry
         run: make install    
       - name: Run flake8
