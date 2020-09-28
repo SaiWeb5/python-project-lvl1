@@ -25,6 +25,7 @@ jobs:
           poetry --version
           pip --version
           python --version
+          flake8 --version
       - name: Files
         run: ls -la  
       - name: Run make poetry
