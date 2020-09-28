@@ -9,9 +9,7 @@ jobs:
 
     steps:
       - name: Test poetry
-        run: pip install poetry
-      - name: Test
-        run: poetry run brain-games 
+        run: ls -la
         env: 
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
