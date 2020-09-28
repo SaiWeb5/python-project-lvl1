@@ -8,10 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Poetry setup
-        run: pip install poetry
-      - name: Run flake8
-        run: poetry run flake8 brain_games
+      - name: Python Poetry Action
+        uses: abatilo/actions-poetry@v1.0.0
         env: 
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
