@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Testing linter
-        run: make Lint  
+        run: make lint  
 
       
       
