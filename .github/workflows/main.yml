@@ -25,7 +25,8 @@ jobs:
           poetry --version
           pip --version
           python --version
-          flake8 --version
+      - name: Flake8
+        run: python -m pip install flake8    
       - name: Files
         run: ls -la  
       - name: Run make poetry
