@@ -19,21 +19,8 @@ jobs:
       - name: Run image
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: ${{ matrix.poetry-version }}
-      - name: Poetry version 
-        run: | 
-          poetry --version
-          pip --version
-          python --version
-      - name: Flake8
-        run: |
-          python -m pip install flake8
-          flake8 --version    
-      - name: Files
-        run: ls -la  
-      - name: Run game
-        run: poetry run flake8 brain_games  
-      - name: Run make poetry
+          poetry-version: ${{ matrix.poetry-version }} 
+      - name: Install poetry
         run: make install    
-      - name: Run flake8
+      - name: Run linter test
         run: make lint  
