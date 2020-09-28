@@ -26,9 +26,13 @@ jobs:
           pip --version
           python --version
       - name: Flake8
-        run: python -m pip install flake8    
+        run: |
+          python -m pip install flake8
+          flake8 --version    
       - name: Files
         run: ls -la  
+      - name: Run game
+        run: poetry run flake8 brain_games  
       - name: Run make poetry
         run: make install    
       - name: Run flake8
