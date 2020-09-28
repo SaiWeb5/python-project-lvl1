@@ -9,9 +9,9 @@ jobs:
 
     steps:
       - name: Python Poetry Action
-        uses: abatilo/actions-poetry@v1.0.0
+        uses: pip poetry install
       - name: Test
-        run: poetry run flake8 brain_games
+        run: poetry run brain-games 
         env: 
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
