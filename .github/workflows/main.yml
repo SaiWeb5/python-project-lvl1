@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Python Poetry Action
-        uses: pip poetry install
+      - name: Test poetry
+        run: pip poetry install
       - name: Test
         run: poetry run brain-games 
         env: 
