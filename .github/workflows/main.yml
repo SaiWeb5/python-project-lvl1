@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Test poetry
-        run: pip poetry install
+        run: pip install poetry
       - name: Test
         run: poetry run brain-games 
         env: 
