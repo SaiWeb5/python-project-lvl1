@@ -11,7 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Poetry setup
-        run: pip install poetry   
+        run: pip3 install poetry
+      - name: Test poetry
+        run: make install     
       - name: Run flake8
         run: make lint 
         env:
