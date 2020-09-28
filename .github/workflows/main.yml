@@ -9,7 +9,7 @@ jobs:
       matrix:
         python-version: [3.8]
         poetry-version: [1.0.10]
-        os: [ubuntu-18.04]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -20,7 +20,10 @@ jobs:
         uses: abatilo/actions-poetry@v2.0.0
         with:
           poetry-version: ${{ matrix.poetry-version }}
-      - name: View poetry --help
-        run: poetry --help
-      - name: Version
-        run: poetry --version   
+      - name: Poetry version 
+        run: poetry --version
+      - name: Files
+        run: ls -la  
+        env: 
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
