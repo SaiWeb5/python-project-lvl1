@@ -1,0 +1,14 @@
+name: Linter CI
+
+on: [push]
+     
+jobs: 
+  build:   
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Testing linter
+        run: make Lint  
+
+      
+      
