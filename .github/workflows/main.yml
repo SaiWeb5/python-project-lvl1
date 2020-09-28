@@ -24,8 +24,9 @@ jobs:
         run: poetry --version
       - name: Files
         run: ls -la  
+      - name: Nano
+        run: nano Makefile
+      - name: Run make poetry
+        run: make install    
       - name: Run flake8
         run: make lint  
-        env: 
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
