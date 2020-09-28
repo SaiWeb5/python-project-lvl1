@@ -1,4 +1,4 @@
-name: Linte CI
+name: Linter CI
 
 on: push
 
@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run Super-Linter
+      - name: Poetry setup
+        run: make install  
+      - name: Run flake8
         run: make lint 
         env:
           DEFAULT_BRANCH: main
