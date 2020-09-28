@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install dependencies
-        run: |
-          pip install poetry
-          make install  
+      - name: Poetry setup
+        run: pip install poetry
       - name: Run flake8
-        run: make lint 
-        
+        run: poetry run flake8 brain_games
+        env: 
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
