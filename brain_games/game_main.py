@@ -1,6 +1,7 @@
 import random
 from brain_games.user import welcome_user
 
+
 def game():
     count = 0
     answer = ""
@@ -17,8 +18,8 @@ def game():
         elif solution % 2 != 0 and answer == "No":
             print("Ok, true!")
         else:
-            print("You are wrong. Correct answer was \"No\". \n"
-                "Let's try again,", name + "!")
+            print("You are wrong.")
+            print("Let's try again,", name + "!")
             break
         if count == 3:
             print("Congratulations,", name + "!")
