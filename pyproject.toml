@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "SaiWeb5_brain_games"
-version = "0.1.3"
-description = ""
+version = "0.1.4"
+description = "This is SaiWeb5 Hexlet study project"
 authors = ["Andrey <OniSairento5@yandex.ru>"]
 packages = [
   { include = "brain_games" },
@@ -15,6 +15,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 [[tool.poetry.source]]
 name = "saiweb_test"

@@ -1,8 +1,8 @@
 import random
-from brain_games.user import welcome_user
+from brain_games.game_main.user import welcome_user
 
 
-def game():
+def brain_even():
     count = 0
     answer = ""
     solution = 0
