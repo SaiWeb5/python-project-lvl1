@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "SaiWeb5_brain_games"
-version = "0.1.5"
+version = "0.1.6"
 description = "This is SaiWeb5 Hexlet study project"
 authors = ["Andrey <OniSairento5@yandex.ru>"]
 packages = [
@@ -17,6 +17,7 @@ prompt = "^0.4.1"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
 
 [[tool.poetry.source]]
 name = "saiweb_test"
