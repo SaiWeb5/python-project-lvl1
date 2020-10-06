@@ -26,4 +26,4 @@ def brain_progression():
     if str(numbers[3]) == answer:  # Проверяем ответ
         print("Congratulations,", name + "!")
     else:
-        print("You are wrong! Correct answer was:", numbers[3], "\n" "Let's try again,", name + "!")
+        print("No! Correct answer:", numbers[3], "\n" "Try again,", name + "!")

@@ -8,12 +8,12 @@ def brain_even():
     solution = 0
     name = welcome_user()
     while count != 3:
-        solution = random.randint(0, 20)
+        solution = random.randint(0, 20)  # Генерируем число
         count += 1
         print("Question:", solution)
         print("You answer: ", end="")
         answer = input()
-        if solution % 2 == 0 and answer == "Yes":
+        if solution % 2 == 0 and answer == "Yes":  # Ищем общий делитель
             print("Correct!")
         elif solution % 2 != 0 and answer == "No":
             print("Ok, true!")

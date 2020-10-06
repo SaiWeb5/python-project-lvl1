@@ -7,10 +7,10 @@ def brain_gcd():
     name = welcome_user()
     while count != 3:
         count += 1
-        num1 = random.randint(0, 100)
+        num1 = random.randint(0, 100)  # Генерируем числа
         num2 = random.randint(0, 100)
         print("Question:", + num1, num2)
-        while num1 != 0 and num2 != 0:
+        while num1 != 0 and num2 != 0:  # Высчитываем общий делитель
             if num1 > num2:
                 num1 %= num2
             else:
@@ -25,5 +25,4 @@ def brain_gcd():
             print("Let's try again:", name + "!")
             break
     if count == 3:
-            print('Congratulations,', name + "!")
-
+        print("Congratulations,", name + "!")
