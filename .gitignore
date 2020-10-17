@@ -3,3 +3,6 @@ __pycache__
 dist/
 *.pyc
 .venv/
+brain_games/game_main/__pycache__
+brain_games/__pycache__
+brain_games/games_main/scripts/__pycache__
