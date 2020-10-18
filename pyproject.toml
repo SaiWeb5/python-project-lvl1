@@ -12,7 +12,7 @@ python = "^3.8"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.5.0"
+flake8 = "^3.8.4"
 
 [tool.poetry.scripts]
 brain-even = "brain_games.scripts.brain_even:main"
