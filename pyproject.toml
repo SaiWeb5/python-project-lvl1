@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "SaiWeb5_brain_games"
+name = "hexlet-code"
 version = "1.0"
 description = "This is SaiWeb5 Hexlet study project"
 authors = ["Andrey <OniSairento5@yandex.ru>"]
