@@ -1,8 +1,10 @@
-from brain_games.game_main.game_gcd import game_gcd
+from brain_games.game_main.game_engine import check_new_system
+from brain_games.game_main.game_gcd import start_brain_gcd
+from brain_games.game_main.user import user_gcd
 
 
 def main():
-    game_gcd()
+    check_new_system(user_gcd, start_brain_gcd)
 
 
 if __name__ == '__main__':
