@@ -6,18 +6,16 @@ def start_brain_progression():
     game_over = 0
     count = 0
     numbers = []
-    resultat = ""
     a = random.randint(10, 60)
     b = random.randint(1, 5)
     while count != 10:  # Генерируем последовательность
         count += 1
         a += b
         numbers.append(a)
-    for i in numbers:  # Создаем строку на вывод пользователю
-        resultat = "".join(str(numbers))
+    resultat = "".join(str(numbers))  # Создаем строку на вывод пользователю
     str_list = list(resultat)
     for i in [13, 14]:  # Скрываем число
-            str_list[i] = '.'
+        str_list[i] = '.'
     resultat = ''.join(str_list)
     resultat = re.sub(r'[][,]', '', resultat)  # Убираем лишние символы
     print(resultat)

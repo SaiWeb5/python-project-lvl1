@@ -3,7 +3,6 @@ from brain_games.game_main.game_progression import start_brain_progression
 from brain_games.game_main.user import user_progression
 
 
-
 def main():
     check_new_system(user_progression, start_brain_progression)
 
