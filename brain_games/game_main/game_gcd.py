@@ -1,4 +1,3 @@
-from brain_games.game_main.engine_functions import game_gcd
 import random
 
 
@@ -15,7 +14,7 @@ def start_brain_gcd():
     gcd = num1 + num2
     print('You answer: ', end='')
     answer = input()
-    if int(answer) == gcd:
+    if str(answer) == str(gcd):
         print('Correct')
         return
     else:

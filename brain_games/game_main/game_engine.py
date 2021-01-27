@@ -2,6 +2,8 @@ from brain_games.game_main.user import user_public, user_calc, user_gcd, user_pr
 from brain_games.game_main.game_even import start_brain_even
 from brain_games.game_main.game_calc import start_brain_calc
 from brain_games.game_main.game_gcd import start_brain_gcd
+from brain_games.game_main.game_progression import start_brain_progression
+from brain_games.game_main.game_prime import start_brain_prime
 import prompt
 
 

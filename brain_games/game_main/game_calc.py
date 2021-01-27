@@ -23,5 +23,5 @@ def start_brain_calc():
         return
     else:
         game_over += 1
-        print(answer, 'is wrong answer. Correct answer was', solution)
+        print(answer, 'is wrong answer. Correct answer was:', solution)
         return game_over
