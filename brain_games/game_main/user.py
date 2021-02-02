@@ -1,5 +1,5 @@
 def user_public():
-    print("Answer \"Yes\" if the number is even, otherwise \"No\".")
+    print("Answer \"yes\" if the number is even, otherwise \"no\".")
 
 
 def user_calc():
@@ -15,4 +15,4 @@ def user_progression():
 
 
 def user_prime():
-    print("Answer \"Yes\" if the number is prime, otherwise \"No\".")
+    print("Answer \"yes\" if the number is prime, otherwise \"no\".")

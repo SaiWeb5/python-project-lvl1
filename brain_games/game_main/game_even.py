@@ -1,6 +1,6 @@
 import random
 
-
+'''
 def start_brain_even():
     game_over = 0
     solution = random.randint(0, 20)  # Генерируем число
@@ -25,3 +25,13 @@ def start_brain_even():
         game_over += 1
         print('Incorrect input.')
         return game_over
+'''
+
+
+def start_brain_even():
+    solution = random.randint(0, 20)  # Генерируем число
+    # Получаем и отправляем ответ
+    if solution % 2 == 0:
+        return solution, 'yes'
+    if solution % 2 != 0:
+        return solution, 'no'
