@@ -1,7 +1,7 @@
 import prompt
 
 
-def check_new_system(rules, function):
+def game_engine(rules, function):
     # Приветствуем игрока и показываем правила игры
     print("Welcome! To the brain games!")
     name = prompt.string("\n" "May I have your name? ")

@@ -12,7 +12,7 @@ def gen_prime():
     return number, d * d > number
 
 
-def start_brain_prime():
+def game_prime():
     task = gen_prime()  # Получаем вопрос и ответ
     # Передаем вопрос и ответ в игровой движок
     if task[1] is True:

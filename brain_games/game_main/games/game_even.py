@@ -1,7 +1,7 @@
 import random
 
 
-def start_brain_even():
+def game_even():
     solution = random.randint(0, 20)  # Генерируем число
     # Получаем и отправляем ответ
     if solution % 2 == 0:

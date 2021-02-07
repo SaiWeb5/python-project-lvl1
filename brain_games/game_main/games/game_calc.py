@@ -2,7 +2,7 @@ import random
 import operator
 
 
-def start_brain_calc():
+def game_calc():
     num1 = random.randint(0, 100)  # Генерация чисел
     num2 = random.randint(0, 100)
     # Используем операторы через строку

@@ -2,7 +2,7 @@ import random
 import re
 
 
-def start_brain_progression():
+def game_progression():
     count = 0
     numbers = []
     a = random.randint(10, 60)
@@ -13,5 +13,6 @@ def start_brain_progression():
         numbers.append(a)
     solution = list(map(str, numbers))
     hide_number = solution[random.randint(0, 8)]
-    task = re.sub(hide_number, '..', ' '.join(map(str, numbers)))  # Убираем лишние символы
+    # Убираем лишние символы
+    task = re.sub(hide_number, '..', ' '.join(map(str, numbers)))
     return task, hide_number

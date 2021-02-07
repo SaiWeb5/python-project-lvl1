@@ -1,7 +1,7 @@
 import random
 
 
-def start_brain_gcd():
+def game_gcd():
     num1 = random.randint(0, 100)  # Генерируем числа
     num2 = random.randint(0, 100)
     task = '{} {}'.format(str(num1), str(num2))
