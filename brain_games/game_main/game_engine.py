@@ -3,7 +3,7 @@ import prompt
 
 def game_engine(rules, function):
     # Приветствуем игрока и показываем правила игры
-    print("Welcome! To the brain games!")
+    print("Welcome! To the Brain Games!")
     name = prompt.string("\n" "May I have your name? ")
     print("Hello,", name + "! \n" "")
     print(rules())
