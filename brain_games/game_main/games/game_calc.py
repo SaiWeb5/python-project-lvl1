@@ -1,6 +1,7 @@
 import random
 import operator
 
+
 def gen_num():
     num1 = random.randint(0, 100)  # Генерация чисел
     num2 = random.randint(0, 100)
