@@ -2,15 +2,21 @@ import random
 import re
 
 
+def gen_num():
+    num_1 = random.randint(10, 60)
+    num_2 = random.randint(1, 5)
+    return num_1, num_2
+
+
 def game_progression():
+    value_1 = gen_num()[0]
+    value_2 = gen_num()[1]
     count = 0
     numbers = []
-    a = random.randint(10, 60)
-    b = random.randint(1, 5)
     while count != 10:  # Генерируем последовательность
         count += 1
-        a += b
-        numbers.append(a)
+        value_1 += value_2
+        numbers.append(value_1)
     solution = list(map(str, numbers))
     hide_number = solution[random.randint(0, 8)]
     # Убираем лишние символы
