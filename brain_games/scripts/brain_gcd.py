@@ -1,10 +1,9 @@
-from brain_games.game_main.game_engine import game_engine
-from brain_games.game_main.games.game_gcd import game_gcd
-from brain_games.game_main.user import user_gcd
+from brain_games.game_engine import start_game
+from brain_games.games.game_gcd import game_gcd, gcd_rules
 
 
 def main():
-    game_engine(user_gcd, game_gcd)
+    start_game(gcd_rules, game_gcd)
 
 
 if __name__ == '__main__':
