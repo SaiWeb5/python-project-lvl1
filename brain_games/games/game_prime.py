@@ -5,13 +5,8 @@ def prime_rules():
     return 'Answer "yes" if the number is prime, otherwise "no".'
 
 
-def gen_num():
-    number = random.randint(1, 100)
-    return number
-
-
 def gen_prime():
-    number = gen_num()
+    number = random.randint(1, 100)
     if number % 2 == 0:
         return number, number == 2
     d = 3
