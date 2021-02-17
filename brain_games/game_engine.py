@@ -18,7 +18,7 @@ def start_game(rules, game):
             print('Correct!')
         else:
             print('You are wrong! Correct answer was:', correct_answer)
-            print('{}{}'.format("Let's try again, ", name, '!'))
+            print('{}{}{}'.format("Let's try again, ", name, '!'))
             break
     else:
         print('{}{}{}'.format('Congratulations, ', name, '!'))

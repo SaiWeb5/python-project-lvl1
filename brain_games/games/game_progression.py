@@ -2,7 +2,7 @@ import random
 import re
 
 
-def progression_rules():
+def prog_rules():
     return 'What number is missing in the progression?'
 
 
