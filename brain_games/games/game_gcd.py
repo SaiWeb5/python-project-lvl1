@@ -1,14 +1,16 @@
 import random
+GCD_RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def gcd_rules():
-    return 'Find the greatest common divisor of given numbers.'
-
-
-def finding_the_divisor():
+def gen_num():
     num1 = random.randint(0, 100)
     num2 = random.randint(0, 100)
-    while num1 != 0 and num2 != 0:  # Высчитываем общий делитель
+    return num1, num2
+
+
+def find_the_nod():
+    num1, num2 = gen_num()
+    while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 %= num2
         else:
@@ -18,6 +20,6 @@ def finding_the_divisor():
 
 
 def game_gcd():
-    num1, num2, solution = finding_the_divisor()
+    num1, num2, solution = finding_the_nod()
     task = '{} {}'.format(num1, num2)
     return task, str(solution)
