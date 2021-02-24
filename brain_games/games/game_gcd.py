@@ -20,6 +20,6 @@ def find_the_nod():
 
 
 def game_gcd():
-    num1, num2, solution = finding_the_nod()
+    num1, num2, solution = find_the_nod()
     task = '{} {}'.format(num1, num2)
     return task, str(solution)
