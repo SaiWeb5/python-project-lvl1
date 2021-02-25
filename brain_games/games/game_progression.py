@@ -1,5 +1,4 @@
 import random
-import re
 PROG_RULES = 'What number is missing in the progression?'
 
 
@@ -20,7 +19,7 @@ def generate_numbers():
 
 def game_progression():
     numbers = generate_numbers()
-    solution = list(map(str, numbers))
-    hide_number = solution[random.randint(0, 8)]
-    task = re.sub(hide_number, '..', ' '.join(map(str, numbers)))
-    return task, hide_number
+    hide_num = numbers[random.randint(0, 8)]
+    replace_num = list(map(lambda x: x if x != hide_num else '..', numbers))
+    task = ' '.join(map(str, replace_num))
+    return task, str(hide_num)
