@@ -2,13 +2,9 @@ import random
 PRIME_RULES = 'Answer "yes" if the number is prime, otherwise "no".'
 
 
-def gen_num():
-    number = random.randint(1, 200)
-    return number
-
-
-def gen_prime():
-    number = gen_num()
+def find_prime(number):
+    if number <= 1:
+        return number, False
     if number % 2 == 0:
         return number, number == 2
     d = 3
@@ -18,9 +14,8 @@ def gen_prime():
 
 
 def game_prime():
-    question, result = gen_prime()
-    if question == 1:
-        return question, 'no'
+    number_test = random.randint(1, 100)
+    question, result = find_prime(number_test)
     if result is False:
         return question, 'no'
     else:
