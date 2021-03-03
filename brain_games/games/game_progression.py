@@ -15,6 +15,7 @@ def game_progression():
     num2 = random.randint(1, 5)
     list_of_numbers = generate_numbers(num1, num2)
     hide_number = list_of_numbers[random.randint(0, 8)]
-    replace_number = list(map(lambda x: x if x != hide_number else '..', list_of_numbers))
+    replace_number = list(map(
+        lambda x: x if x != hide_number else '..', list_of_numbers))
     task = ' '.join(map(str, replace_number))
     return task, str(hide_number)

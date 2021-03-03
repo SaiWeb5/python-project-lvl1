@@ -8,7 +8,7 @@ def game_calc():
     num2 = random.randint(0, 100)
     operators = ('+', '-', '*')
     random_operator = random.choice(operators)
-    task = '{} {} {}'.format(num1, choose_of_operators, num2)
+    task = '{} {} {}'.format(num1, random_operator, num2)
     if random_operator == '+':
         solution = operator.add(num1, num2)
     elif random_operator == '-':
