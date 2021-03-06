@@ -1,9 +1,9 @@
 from brain_games.game_engine import start_game
-from brain_games.games.game_prime import game_prime, PRIME_RULES
+from brain_games.games.prime import start_prime, HINT
 
 
 def main():
-    start_game(PRIME_RULES, game_prime)
+    start_game(HINT, start_prime)
 
 
 if __name__ == '__main__':

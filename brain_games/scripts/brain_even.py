@@ -1,9 +1,9 @@
 from brain_games.game_engine import start_game
-from brain_games.games.game_even import game_even, EVEN_RULES
+from brain_games.games.even import is_even, HINT
 
 
 def main():
-    start_game(EVEN_RULES, game_even)
+    start_game(HINT, is_even)
 
 
 if __name__ == '__main__':
