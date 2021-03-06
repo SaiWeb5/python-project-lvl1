@@ -18,7 +18,7 @@ def start_progression():
     num1 = random.randint(MIN_NUNBER, MAX_NUMBER)
     num2 = random.randint(MIN_NUNBER_STEP, MAX_NUMBER_STEP)
     progression = generate_numbers(num1, num2)
-    hidden_number = progression[random.randint(1, len(progression))]
+    hidden_number = progression[random.randint(1, 8)]
     replacing_number = [
         number if number != hidden_number else '...'
         for number in progression
