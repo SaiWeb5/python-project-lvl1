@@ -4,17 +4,18 @@ MIN_NUNBER = 1
 MAX_NUMBER = 60
 MIN_NUNBER_STEP = 1
 MAX_NUMBER_STEP = 5
+STEP_COUNT = 10
 
 
 def generate_numbers(num1, num2):
     numbers = []
-    for _ in range(10):
+    for _ in range(STEP_COUNT):
         num1 += num2
         numbers.append(num1)
     return numbers
 
 
-def start_progression():
+def get_progression():
     num1 = random.randint(MIN_NUNBER, MAX_NUMBER)
     num2 = random.randint(MIN_NUNBER_STEP, MAX_NUMBER_STEP)
     progression = generate_numbers(num1, num2)

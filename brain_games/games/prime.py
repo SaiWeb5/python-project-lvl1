@@ -15,7 +15,7 @@ def is_prime(number):
     return odd_divisor * odd_divisor > number
 
 
-def start_prime():
+def get_prime():
     num = random.randint(MIN_NUNBER, MAX_NUMBER)
     result = is_prime(num)
     if not result:

@@ -5,8 +5,8 @@ MAX_NUMBER = 20
 
 
 def is_even():
-    solution = random.randint(MIN_NUNBER, MAX_NUMBER)
-    if solution % 2 == 0:
-        return str(solution), 'yes'
+    task = random.randint(MIN_NUNBER, MAX_NUMBER)
+    if task % 2 == 0:
+        return str(task), 'yes'
     else:
-        return str(solution), 'no'
+        return str(task), 'no'

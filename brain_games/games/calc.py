@@ -5,7 +5,7 @@ MIN_NUNBER = 1
 MAX_NUMBER = 100
 
 
-def start_calc():
+def get_calc():
     num_1 = random.randint(MIN_NUNBER, MAX_NUMBER)
     num_2 = random.randint(MIN_NUNBER, MAX_NUMBER)
     operators = ('+', '-', '*')

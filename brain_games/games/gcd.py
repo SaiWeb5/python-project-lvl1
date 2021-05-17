@@ -14,9 +14,9 @@ def find_gcd(num1, num2):
     return result
 
 
-def start_gcd():
+def get_gcd():
     num1 = random.randint(MIN_NUNBER, MAX_NUMBER)
     num2 = random.randint(MIN_NUNBER, MAX_NUMBER)
-    result = find_gcd(num1, num2)
+    solution = find_gcd(num1, num2)
     task = '{} {}'.format(num1, num2)
-    return task, str(result)
+    return task, str(solution)
