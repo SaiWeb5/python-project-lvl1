@@ -9,7 +9,7 @@ def start_game(rules, get_task):
     print(rules)
     for _ in range(ROUNDS_COUNT):
         question, correct_answer = get_task()
-        print('Question: {}!'.format(question))
+        print('Question: {}'.format(question))
         answer_from_user = prompt.string("You answer: ")
         if correct_answer == answer_from_user:
             print('Correct!')
