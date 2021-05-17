@@ -14,7 +14,8 @@ def start_game(rules, get_task):
         if correct_answer == answer_from_user:
             print('Correct!')
         else:
-            print('You are wrong! Correct answer was: {}!'.format(correct_answer))
+            print('You are wrong! '
+                  'Correct answer was: {}!'.format(correct_answer))
             print("Let's try again, {}!".format(name))
             break
     else:
